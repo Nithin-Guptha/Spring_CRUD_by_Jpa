@@ -31,10 +31,9 @@ public class EmpController {
 	
 	@PutMapping("/updateData")
 	public String updateData(@RequestBody EmpRequest empreq) {
-		
-		
 		return empService.updateData(empreq);
 	}
+//here I make changes
 	
 	@DeleteMapping("/deletedata/{id}")
 	public String deleteData(@PathVariable int id) {
